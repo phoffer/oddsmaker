@@ -6,6 +6,8 @@ Oddsmaker can handle American odds, decimal odds, fractional odds, and implied p
 
 [SportsBookReview](https://www.sportsbookreview.com/picks/tools/odds-converter/) has an excellent page which explains the different types of odds and converts between them.
 
+This gem can be demoed at [oddsmaker.herokuapp.com](http://oddsmaker.herokuapp.com).
+
 ## Installation
 
 Add this line to your application's Gemfile:
