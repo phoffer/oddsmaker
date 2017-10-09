@@ -80,7 +80,7 @@ module Oddsmaker
     # Hash representation of a market.
     # @return [Hash]
     def to_h
-      full_odds = if self.total_probability != 1
+      full_odds = if self.total_probability != 1 && self.odds.size > 1
         no_vig = self.without_vig_odds
         odds.map.with_index { |odd, index| odd.to_h.merge(actual: no_vig[index].implied_probability.value, without_vig: no_vig[index].value) }
       else
